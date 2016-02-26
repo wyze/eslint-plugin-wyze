@@ -17,6 +17,11 @@
     "lib",
     "*.js"
   ],
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
   "devDependencies": {
     "ava": "^0.12.0",
     "eslint": "^2.2.0"
