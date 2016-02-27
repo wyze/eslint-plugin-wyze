@@ -41,6 +41,14 @@ new RuleTester().run('space-in-control-statement', rule, {
         } while ( true )
         `
     },
+    {
+      code:
+      `
+      switch ( true ) {
+        // Do something...
+      }
+      `
+    },
   ],
   invalid: [
     {
@@ -245,6 +253,40 @@ new RuleTester().run('space-in-control-statement', rule, {
       errors: [
         expectedError('after', 'DoWhile'),
         expectedError('before', 'DoWhile')
+      ]
+    },
+    {
+      code:
+      `
+      switch (true ) {
+        // Do something...
+      }
+      `,
+      errors: [
+        expectedError('after', 'Switch')
+      ]
+    },
+    {
+      code:
+      `
+      switch ( true) {
+        // Do something...
+      }
+      `,
+      errors: [
+        expectedError('before', 'Switch')
+      ]
+    },
+    {
+      code:
+      `
+      switch (true) {
+        // Do something...
+      }
+      `,
+      errors: [
+        expectedError('after', 'Switch'),
+        expectedError('before', 'Switch')
       ]
     },
   ]
