@@ -2,9 +2,9 @@ import { RuleTester } from 'eslint'
 import rule from '../../lib/rules/space-in-control-statement'
 import test from 'ava'
 
-const expectedError = loc => ({
+const expectedError = ( loc, type ) => ({
   message: `There must be a space ${loc} this paren.`,
-  type: 'IfStatement',
+  type: `${type}Statement`,
 })
 
 new RuleTester().run('space-in-control-statement', rule, {
@@ -13,6 +13,14 @@ new RuleTester().run('space-in-control-statement', rule, {
       code:
         `
         if ( 1 + 1 === 2 && true ) {
+          // Do something...
+        }
+        `
+    },
+    {
+      code:
+        `
+        for ( var i = 0; i < 10; i++ ) {
           // Do something...
         }
         `
@@ -27,7 +35,7 @@ new RuleTester().run('space-in-control-statement', rule, {
         }
         `,
       errors: [
-        expectedError('after')
+        expectedError('after', 'If')
       ]
     },
     {
@@ -38,7 +46,7 @@ new RuleTester().run('space-in-control-statement', rule, {
         }
         `,
       errors: [
-        expectedError('before')
+        expectedError('before', 'If')
       ]
     },
     {
@@ -49,8 +57,42 @@ new RuleTester().run('space-in-control-statement', rule, {
         }
         `,
       errors: [
-        expectedError('after'),
-        expectedError('before')
+        expectedError('after', 'If'),
+        expectedError('before', 'If')
+      ]
+    },
+    {
+      code:
+        `
+        for (var i = 0; i < 1; i++ ) {
+          // Do something...
+        }
+        `,
+      errors: [
+        expectedError('after', 'For')
+      ]
+    },
+    {
+      code:
+        `
+        for ( var i = 0; i < 1; i++) {
+          // Do something...
+        }
+        `,
+      errors: [
+        expectedError('before', 'For')
+      ]
+    },
+    {
+      code:
+        `
+        for (var i = 0; i < 1; i++) {
+          // Do something...
+        }
+        `,
+      errors: [
+        expectedError('after', 'For'),
+        expectedError('before', 'For')
       ]
     },
   ]
