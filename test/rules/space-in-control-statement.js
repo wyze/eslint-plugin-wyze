@@ -80,6 +80,74 @@ new RuleTester().run('space-in-control-statement', rule, {
     {
       code:
         `
+        if (true) {
+          // Do something...
+        }
+        `,
+      errors: [
+        expectedError('after', 'If'),
+        expectedError('before', 'If')
+      ]
+    },
+    {
+      code:
+        `
+        if (true ) {
+          // Do something...
+        } else if (true ) {
+          // Do something else...
+        }
+        `,
+      errors: [
+        expectedError('after', 'If'),
+        expectedError('after', 'If')
+      ]
+    },
+    {
+      code:
+        `
+        if ( true) {
+          // Do something...
+        } else if ( true) {
+          // Do something else...
+        }
+        `,
+      errors: [
+        expectedError('before', 'If'),
+        expectedError('before', 'If')
+      ]
+    },
+    {
+      code:
+        `
+        if (true) {
+          // Do something...
+        } else if (true) {
+          // Do something else...
+        }
+        `,
+      errors: [
+        expectedError('after', 'If'),
+        expectedError('before', 'If'),
+        expectedError('after', 'If'),
+        expectedError('before', 'If')
+      ]
+    },
+    {
+      code:
+        `
+        if (true) {
+          // Do something...
+        }
+        `,
+      errors: [
+        expectedError('after', 'If'),
+        expectedError('before', 'If')
+      ]
+    },
+    {
+      code:
+        `
         for (var i = 0; i < 1; i++ ) {
           // Do something...
         }
