@@ -39,7 +39,7 @@ The default member syntax sort order is:
 The following example shows correct sorted import declarations:
 
 ```js
-/*eslint sort-imports: 2*/
+/*eslint wyze/sort-imports: 2*/
 import 'module-without-export.js';
 import * as foo from 'foo.js';
 import * as bar from 'bar.js';
@@ -53,39 +53,39 @@ import b from 'qux.js';
 The following patterns are considered problems:
 
 ```js
-/*eslint sort-imports: 2*/
+/*eslint wyze/sort-imports: 2*/
 import b from 'foo.js';
 import a from 'bar.js';
 
-/*eslint sort-imports: 2*/
+/*eslint wyze/sort-imports: 2*/
 import a from 'foo.js';
 import A from 'bar.js';
 
-/*eslint sort-imports: 2*/
+/*eslint wyze/sort-imports: 2*/
 import {b, c} from 'foo.js';
 import {a, b} from 'bar.js';
 
-/*eslint sort-imports: 2*/
+/*eslint wyze/sort-imports: 2*/
 import a from 'foo.js';
 import {b, c} from 'bar.js';
 
-/*eslint sort-imports: 2*/
+/*eslint wyze/sort-imports: 2*/
 import a from 'foo.js';
 import * as b from 'bar.js';
 
-/*eslint sort-imports: 2*/
+/*eslint wyze/sort-imports: 2*/
 import {b, a, c} from 'foo.js'
 ```
 
 The following patterns are not considered problems:
 
 ```js
-/*eslint sort-imports: 2*/
+/*eslint wyze/sort-imports: 2*/
 import a from 'foo.js';
 import b from 'bar.js';
 import c from 'baz.js';
 
-/*eslint sort-imports: 2*/
+/*eslint wyze/sort-imports: 2*/
 import 'foo.js'
 import * from 'bar.js';
 import { a, b } from 'baz.js';
@@ -93,7 +93,7 @@ import { d } from 'baz-extra.js';
 import c from 'qux.js';
 import e, { f } from 'qux-extra.js';
 
-/*eslint sort-imports: 2*/
+/*eslint wyze/sort-imports: 2*/
 import { a, b, c } from 'foo.js'
 ```
 
@@ -110,7 +110,7 @@ Default option settings are
 
 ```json
 {
-    'sort-imports': [2, {
+    'wyze/sort-imports': [2, {
         'ignoreCase': false,
         'ignoreMemberSort': false,
         'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single']
@@ -125,7 +125,7 @@ When `true` the rule ignores the case-sensitivity of the imports local name.
 The following patterns are considered problems:
 
 ```js
-/*eslint sort-imports: [2, { 'ignoreCase': true }]*/
+/*eslint wyze/sort-imports: [2, { 'ignoreCase': true }]*/
 
 import B from 'foo.js';
 import a from 'bar.js';
@@ -134,7 +134,7 @@ import a from 'bar.js';
 The following patterns are not considered problems:
 
 ```js
-/*eslint sort-imports: [2, { 'ignoreCase': true }]*/
+/*eslint wyze/sort-imports: [2, { 'ignoreCase': true }]*/
 
 import a from 'foo.js';
 import B from 'bar.js';
@@ -150,14 +150,14 @@ Ignores the member sorting within a `multiple` member import declaration.
 The following patterns are considered problems:
 
 ```js
-/*eslint sort-imports: 2*/
+/*eslint wyze/sort-imports: 2*/
 import { b, a, c } from 'foo.js'
 ```
 
 The following patterns are not considered problems:
 
 ```js
-/*eslint sort-imports: [2, { 'ignoreMemberSort': true }]*/
+/*eslint wyze/sort-imports: [2, { 'ignoreMemberSort': true }]*/
 import { b, a, c } from 'foo.js'
 ```
 
@@ -177,7 +177,7 @@ Use this option if you want a different sort order. Every style must be defined 
 The following patterns are considered problems:
 
 ```js
-/*eslint sort-imports: 2*/
+/*eslint wyze/sort-imports: 2*/
 import a from 'foo.js';
 import * as b from 'bar.js';
 ```
@@ -185,12 +185,12 @@ import * as b from 'bar.js';
 The following patterns are not considered problems:
 
 ```js
-/*eslint sort-imports: [2, { 'memberSyntaxSortOrder': ['default', 'all', 'named', 'none'] }]*/
+/*eslint wyze/sort-imports: [2, { 'memberSyntaxSortOrder': ['default', 'all', 'named', 'none'] }]*/
 
 import a from 'foo.js';
 import * as b from 'bar.js';
 
-/*eslint sort-imports: [2, { 'memberSyntaxSortOrder': ['all', 'default', 'named', 'none'] }]*/
+/*eslint wyze/sort-imports: [2, { 'memberSyntaxSortOrder': ['all', 'default', 'named', 'none'] }]*/
 
 import * as foo from 'foo.js';
 import z from 'zoo.js';
