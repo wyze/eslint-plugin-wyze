@@ -7,289 +7,289 @@ const expectedError = ( loc, type ) => ({
   type: `${type}Statement`,
 })
 
-new RuleTester().run('space-in-control-statement', rule, {
-  valid: [
-    {
-      code:
+test(() => {
+  new RuleTester().run('space-in-control-statement', rule, {
+    valid: [
+      {
+        code:
+          `
+          if ( 1 + 1 === 2 && true ) {
+            // Do something...
+          }
+          `
+      },
+      {
+        code:
+          `
+          for ( var i = 0; i < 10; i++ ) {
+            // Do something...
+          }
+          `
+      },
+      {
+        code:
+          `
+          while ( true ) {
+            // Do something...
+          }
+          `
+      },
+      {
+        code:
+          `
+          do {
+            // Do something...
+          } while ( true )
+          `
+      },
+      {
+        code:
         `
-        if ( 1 + 1 === 2 && true ) {
+        switch ( true ) {
           // Do something...
         }
         `
-    },
-    {
-      code:
+      },
+    ],
+    invalid: [
+      {
+        code:
+          `
+          if (true ) {
+            // Do something...
+          }
+          `,
+        errors: [
+          expectedError('after', 'If')
+        ]
+      },
+      {
+        code:
+          `
+          if ( true) {
+            // Do something...
+          }
+          `,
+        errors: [
+          expectedError('before', 'If')
+        ]
+      },
+      {
+        code:
+          `
+          if (true) {
+            // Do something...
+          }
+          `,
+        errors: [
+          expectedError('after', 'If'),
+          expectedError('before', 'If')
+        ]
+      },
+      {
+        code:
+          `
+          if (true) {
+            // Do something...
+          }
+          `,
+        errors: [
+          expectedError('after', 'If'),
+          expectedError('before', 'If')
+        ]
+      },
+      {
+        code:
+          `
+          if (true ) {
+            // Do something...
+          } else if (true ) {
+            // Do something else...
+          }
+          `,
+        errors: [
+          expectedError('after', 'If'),
+          expectedError('after', 'If')
+        ]
+      },
+      {
+        code:
+          `
+          if ( true) {
+            // Do something...
+          } else if ( true) {
+            // Do something else...
+          }
+          `,
+        errors: [
+          expectedError('before', 'If'),
+          expectedError('before', 'If')
+        ]
+      },
+      {
+        code:
+          `
+          if (true) {
+            // Do something...
+          } else if (true) {
+            // Do something else...
+          }
+          `,
+        errors: [
+          expectedError('after', 'If'),
+          expectedError('before', 'If'),
+          expectedError('after', 'If'),
+          expectedError('before', 'If')
+        ]
+      },
+      {
+        code:
+          `
+          if (true) {
+            // Do something...
+          }
+          `,
+        errors: [
+          expectedError('after', 'If'),
+          expectedError('before', 'If')
+        ]
+      },
+      {
+        code:
+          `
+          for (var i = 0; i < 1; i++ ) {
+            // Do something...
+          }
+          `,
+        errors: [
+          expectedError('after', 'For')
+        ]
+      },
+      {
+        code:
+          `
+          for ( var i = 0; i < 1; i++) {
+            // Do something...
+          }
+          `,
+        errors: [
+          expectedError('before', 'For')
+        ]
+      },
+      {
+        code:
+          `
+          for (var i = 0; i < 1; i++) {
+            // Do something...
+          }
+          `,
+        errors: [
+          expectedError('after', 'For'),
+          expectedError('before', 'For')
+        ]
+      },
+      {
+        code:
+          `
+          while (true ) {
+            // Do something...
+          }
+          `,
+        errors: [
+          expectedError('after', 'While')
+        ]
+      },
+      {
+        code:
+          `
+          while ( true) {
+            // Do something...
+          }
+          `,
+        errors: [
+          expectedError('before', 'While')
+        ]
+      },
+      {
+        code:
+          `
+          while (true) {
+            // Do something...
+          }
+          `,
+        errors: [
+          expectedError('after', 'While'),
+          expectedError('before', 'While')
+        ]
+      },
+      {
+        code:
+          `
+          do {
+            // Do something...
+          } while (true )
+          `,
+        errors: [
+          expectedError('after', 'DoWhile')
+        ]
+      },
+      {
+        code:
+          `
+          do {
+            // Do something...
+          } while ( true)
+          `,
+        errors: [
+          expectedError('before', 'DoWhile')
+        ]
+      },
+      {
+        code:
+          `
+          do {
+            // Do something...
+          } while (true)
+          `,
+        errors: [
+          expectedError('after', 'DoWhile'),
+          expectedError('before', 'DoWhile')
+        ]
+      },
+      {
+        code:
         `
-        for ( var i = 0; i < 10; i++ ) {
+        switch (true ) {
           // Do something...
         }
+        `,
+        errors: [
+          expectedError('after', 'Switch')
+        ]
+      },
+      {
+        code:
         `
-    },
-    {
-      code:
-        `
-        while ( true ) {
-          // Do something...
-        }
-        `
-    },
-    {
-      code:
-        `
-        do {
-          // Do something...
-        } while ( true )
-        `
-    },
-    {
-      code:
-      `
-      switch ( true ) {
-        // Do something...
-      }
-      `
-    },
-  ],
-  invalid: [
-    {
-      code:
-        `
-        if (true ) {
+        switch ( true) {
           // Do something...
         }
         `,
-      errors: [
-        expectedError('after', 'If')
-      ]
-    },
-    {
-      code:
+        errors: [
+          expectedError('before', 'Switch')
+        ]
+      },
+      {
+        code:
         `
-        if ( true) {
+        switch (true) {
           // Do something...
         }
         `,
-      errors: [
-        expectedError('before', 'If')
-      ]
-    },
-    {
-      code:
-        `
-        if (true) {
-          // Do something...
-        }
-        `,
-      errors: [
-        expectedError('after', 'If'),
-        expectedError('before', 'If')
-      ]
-    },
-    {
-      code:
-        `
-        if (true) {
-          // Do something...
-        }
-        `,
-      errors: [
-        expectedError('after', 'If'),
-        expectedError('before', 'If')
-      ]
-    },
-    {
-      code:
-        `
-        if (true ) {
-          // Do something...
-        } else if (true ) {
-          // Do something else...
-        }
-        `,
-      errors: [
-        expectedError('after', 'If'),
-        expectedError('after', 'If')
-      ]
-    },
-    {
-      code:
-        `
-        if ( true) {
-          // Do something...
-        } else if ( true) {
-          // Do something else...
-        }
-        `,
-      errors: [
-        expectedError('before', 'If'),
-        expectedError('before', 'If')
-      ]
-    },
-    {
-      code:
-        `
-        if (true) {
-          // Do something...
-        } else if (true) {
-          // Do something else...
-        }
-        `,
-      errors: [
-        expectedError('after', 'If'),
-        expectedError('before', 'If'),
-        expectedError('after', 'If'),
-        expectedError('before', 'If')
-      ]
-    },
-    {
-      code:
-        `
-        if (true) {
-          // Do something...
-        }
-        `,
-      errors: [
-        expectedError('after', 'If'),
-        expectedError('before', 'If')
-      ]
-    },
-    {
-      code:
-        `
-        for (var i = 0; i < 1; i++ ) {
-          // Do something...
-        }
-        `,
-      errors: [
-        expectedError('after', 'For')
-      ]
-    },
-    {
-      code:
-        `
-        for ( var i = 0; i < 1; i++) {
-          // Do something...
-        }
-        `,
-      errors: [
-        expectedError('before', 'For')
-      ]
-    },
-    {
-      code:
-        `
-        for (var i = 0; i < 1; i++) {
-          // Do something...
-        }
-        `,
-      errors: [
-        expectedError('after', 'For'),
-        expectedError('before', 'For')
-      ]
-    },
-    {
-      code:
-        `
-        while (true ) {
-          // Do something...
-        }
-        `,
-      errors: [
-        expectedError('after', 'While')
-      ]
-    },
-    {
-      code:
-        `
-        while ( true) {
-          // Do something...
-        }
-        `,
-      errors: [
-        expectedError('before', 'While')
-      ]
-    },
-    {
-      code:
-        `
-        while (true) {
-          // Do something...
-        }
-        `,
-      errors: [
-        expectedError('after', 'While'),
-        expectedError('before', 'While')
-      ]
-    },
-    {
-      code:
-        `
-        do {
-          // Do something...
-        } while (true )
-        `,
-      errors: [
-        expectedError('after', 'DoWhile')
-      ]
-    },
-    {
-      code:
-        `
-        do {
-          // Do something...
-        } while ( true)
-        `,
-      errors: [
-        expectedError('before', 'DoWhile')
-      ]
-    },
-    {
-      code:
-        `
-        do {
-          // Do something...
-        } while (true)
-        `,
-      errors: [
-        expectedError('after', 'DoWhile'),
-        expectedError('before', 'DoWhile')
-      ]
-    },
-    {
-      code:
-      `
-      switch (true ) {
-        // Do something...
-      }
-      `,
-      errors: [
-        expectedError('after', 'Switch')
-      ]
-    },
-    {
-      code:
-      `
-      switch ( true) {
-        // Do something...
-      }
-      `,
-      errors: [
-        expectedError('before', 'Switch')
-      ]
-    },
-    {
-      code:
-      `
-      switch (true) {
-        // Do something...
-      }
-      `,
-      errors: [
-        expectedError('after', 'Switch'),
-        expectedError('before', 'Switch')
-      ]
-    },
-  ]
+        errors: [
+          expectedError('after', 'Switch'),
+          expectedError('before', 'Switch')
+        ]
+      },
+    ]
+  })
 })
-
-test(async t => t.pass())
