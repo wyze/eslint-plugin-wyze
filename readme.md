@@ -42,6 +42,7 @@ $ npm i --save-dev eslint-plugin-wyze eslint
 ## Supported Rules
 
 * [sort-imports](docs/rules/sort-imports.md): Sorts imports by `named` and `default`.
+* [space-in-control-statement](docs/rules/space-in-control-statement.md): Always put spacing in your control flow statements.
 
 ## License
 
