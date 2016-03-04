@@ -1,17 +1,15 @@
-# Spacing inside control statements (space-in-control-statement)
+# Spacing around conditional expressions (space-around-conditional)
 
 Always put spacing in your control flow statements.
 
 ## Rule Details
 
-This rule is more granular than [space-in-parens](http://eslint.org/docs/rules/space-in-parens). This rule is limited to control flow statements only. `If`, `For`, `While`, etc.
-
-This rule will enforce spacing inside these statements.
+This rule is more granular than [space-in-parens](http://eslint.org/docs/rules/space-in-parens). This rule is limited to conditional expressions in control flow statements only. `If`, `For`, `While`, etc.
 
 The following patterns are not considered problems:
 
 ```js
-/*eslint wyze/space-in-control-statement: 2*/
+/* eslint wyze/space-around-conditional: 2 */
 if ( true ) {
   // Do something...
 }
@@ -36,7 +34,7 @@ switch ( true ) {
 The following patterns are considered problems:
 
 ```js
-/*eslint wyze/space-in-control-statement: 2*/
+/* eslint wyze/space-around-conditional: 2 */
 if (true ) {
   // Do something...
 }

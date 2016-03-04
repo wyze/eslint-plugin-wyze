@@ -1,5 +1,5 @@
 import { RuleTester } from 'eslint'
-import rule from '../../lib/rules/space-in-control-statement'
+import rule from '../../lib/rules/space-around-conditional'
 import test from 'ava'
 
 const expectedError = ( loc, type ) => ({
@@ -8,7 +8,7 @@ const expectedError = ( loc, type ) => ({
 })
 
 test(() => {
-  new RuleTester().run('space-in-control-statement', rule, {
+  new RuleTester().run('space-around-conditional', rule, {
     valid: [
       {
         code:

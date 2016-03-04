@@ -1,6 +1,6 @@
 module.exports = {
   rules: {
-    "space-in-control-statement": require('./lib/rules/space-in-control-statement'),
+    "space-around-conditional": require('./lib/rules/space-around-conditional'),
     "sort-imports": require('./lib/rules/sort-imports')
   }
 }
