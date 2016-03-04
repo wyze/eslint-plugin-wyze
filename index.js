@@ -1,7 +1,7 @@
 module.exports = {
   rules: {
-    "space-around-conditional": require('./lib/rules/space-around-conditional'),
-    "sort-imports": require('./lib/rules/sort-imports')
+    'sort-imports': require('./lib/rules/sort-imports'),
+    'space-around-conditional': require('./lib/rules/space-around-conditional')
   },
   configs: {
     recommended: {
