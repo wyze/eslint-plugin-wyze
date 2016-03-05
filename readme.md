@@ -44,6 +44,32 @@ $ npm i --save-dev eslint-plugin-wyze eslint
 * [sort-imports](docs/rules/sort-imports.md): Sorts imports by `named` and `default`.
 * [space-around-conditional](docs/rules/space-around-conditional.md): Always put spacing around your conditional expressions.
 
+## Recommended Config
+
+We support a recommended config for the rules.
+
+### Enable
+
+```js
+{
+  "extends": "plugin:wyze/recommended",
+  "plugins": [
+    "wyze"
+  ]
+}
+```
+
+### Rules
+
+```js
+{
+  "rules": {
+    "wyze/sort-imports": 2,
+    "wyze/space-around-conditional": 2
+  }
+}
+```
+
 ## License
 
 Copyright © 2016 [Neil Kistner](//github.com/wyze)
