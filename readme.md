@@ -42,7 +42,7 @@ $ npm i --save-dev eslint-plugin-wyze eslint
 ## Supported Rules
 
 * [sort-imports](docs/rules/sort-imports.md): Sorts imports by `named` and `default`.
-* [space-around-conditional](docs/rules/space-around-conditional.md): Always put spacing in your control flow statements.
+* [space-around-conditional](docs/rules/space-around-conditional.md): Always put spacing around your conditional expressions.
 
 ## License
 

@@ -1,6 +1,6 @@
 # Spacing around conditional expressions (space-around-conditional)
 
-Always put spacing in your control flow statements.
+Always put spacing around your conditional expressions.
 
 ## Rule Details
 
