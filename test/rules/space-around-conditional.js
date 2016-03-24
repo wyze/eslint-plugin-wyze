@@ -29,6 +29,14 @@ test(() => {
       {
         code:
           `
+          for ( ;; ) {
+            // Do something...
+          }
+          `
+      },
+      {
+        code:
+          `
           while ( true ) {
             // Do something...
           }
@@ -180,6 +188,40 @@ test(() => {
         code:
           `
           for (var i = 0; i < 1; i++) {
+            // Do something...
+          }
+          `,
+        errors: [
+          expectedError('after', 'For'),
+          expectedError('before', 'For')
+        ]
+      },
+      {
+        code:
+          `
+          for (;; ) {
+            // Do something...
+          }
+          `,
+        errors: [
+          expectedError('after', 'For')
+        ]
+      },
+      {
+        code:
+          `
+          for ( ;;) {
+            // Do something...
+          }
+          `,
+        errors: [
+          expectedError('before', 'For')
+        ]
+      },
+      {
+        code:
+          `
+          for (;;) {
             // Do something...
           }
           `,
