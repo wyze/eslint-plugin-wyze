@@ -64,6 +64,7 @@ We support a recommended config for the rules.
 ```js
 {
   "rules": {
+    "wyze/max-file-length": 2,
     "wyze/sort-imports": 2,
     "wyze/space-around-conditional": 2
   }
