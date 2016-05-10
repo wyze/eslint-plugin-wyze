@@ -65,6 +65,7 @@ We support a recommended config for the rules.
 {
   "rules": {
     "wyze/max-file-length": 2,
+    "wyze/newline-after-export": 2,
     "wyze/sort-imports": 2,
     "wyze/space-around-conditional": 2
   }
