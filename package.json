@@ -23,7 +23,7 @@
     "eslint-plugin"
   ],
   "devDependencies": {
-    "ava": "^0.14.0",
+    "ava": "^0.15.1",
     "eslint": "^2.9.0"
   },
   "peerDependencies": {
