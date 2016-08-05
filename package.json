@@ -24,9 +24,9 @@
   ],
   "devDependencies": {
     "ava": "^0.15.2",
-    "eslint": "^2.11.1"
+    "eslint": "^3.2.2"
   },
   "peerDependencies": {
-    "eslint": "^2.11.1"
+    "eslint": "^3.0.0"
   }
 }
