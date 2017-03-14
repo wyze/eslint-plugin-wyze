@@ -9,40 +9,40 @@ Makes sure the keys from object destructuring are sorted properly.
 The following patterns are not considered problems:
 
 ```js
-/* eslint wyze/sort-destructuring-keys: 2 */
+/* eslint wyze/sort-destructuring-keys: 'error' */
 const props = { a: 1, b: 2, B: 3 }
 
 const { a, b } = props
 const { B, a } = props
 const { ['b'.toUpperCase()]: c, a } = props
 
-/* eslint wyze/sort-destructuring-keys: [2, 'desc'] */
+/* eslint wyze/sort-destructuring-keys: ['error', 'desc'] */
 const { b, a } = props
 const { a, B } = props
 const { ['b'.toUpperCase()]: c, B } = props
 
-/* eslint wyze/sort-destructuring-keys: [2, 'asc', { caseSensitive: false }] */
+/* eslint wyze/sort-destructuring-keys: ['error', 'asc', { caseSensitive: false }] */
 const { B, a } = props
 
-/* eslint wyze/sort-destructuring-keys: [2, 'asc', { ignoreComputed: true }] */
+/* eslint wyze/sort-destructuring-keys: ['error', 'asc', { ignoreComputed: true }] */
 const { a, b, ['b'.toUpperCase()]: c } = props
 ```
 
 The following patterns are considered problems:
 
 ```js
-/* eslint wyze/sort-destructuring-keys: 2 */
+/* eslint wyze/sort-destructuring-keys: 'error' */
 const props = { a: 1, b: 2, B: 3 }
 
 const { b, a } = props
 const { a, B } = props
 const { a, b, ['b'.toUpperCase()]: c } = props
 
-/* eslint wyze/sort-destructuring-keys: [2, 'desc'] */
+/* eslint wyze/sort-destructuring-keys: ['error', 'desc'] */
 const { a, b } = props
 const { a, B } = props
 
-/* eslint wyze/sort-destructuring-keys: [2, 'asc', { caseSensitive: false }] */
+/* eslint wyze/sort-destructuring-keys: ['error', 'asc', { caseSensitive: false }] */
 const { B, a } = props
 ```
 

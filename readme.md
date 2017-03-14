@@ -67,11 +67,11 @@ We support a recommended config for the rules.
 ```js
 {
   "rules": {
-    "wyze/max-file-length": 2,
-    "wyze/newline-after-export": 2,
-    "wyze/sort-destructuring-keys": 2,
-    "wyze/sort-imports": 2,
-    "wyze/space-around-conditional": 2
+    "wyze/max-file-length": "error",
+    "wyze/newline-after-export": "error",
+    "wyze/sort-destructuring-keys": "error",
+    "wyze/sort-imports": "error",
+    "wyze/space-around-conditional": "error"
   }
 }
 ```

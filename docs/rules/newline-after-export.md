@@ -7,14 +7,14 @@ Ensures `export` statements are followed by a newline.
 The following patterns are not considered problems:
 
 ```js
-/* eslint wyze/newline-after-export: 2 */
+/* eslint wyze/newline-after-export: 'error' */
 const num = 42
 
 export { num }
 ```
 
 ```js
-/* eslint wyze/newline-after-export: 2 */
+/* eslint wyze/newline-after-export: 'error' */
 export const num = 42
 
 const message = 'Okay.'
@@ -23,7 +23,7 @@ const message = 'Okay.'
 The following patterns are considered problems:
 
 ```js
-/* eslint wyze/newline-after-export: 2 */
+/* eslint wyze/newline-after-export: 'error' */
 export const num = 42;
 const message = 'Okay'
 ```

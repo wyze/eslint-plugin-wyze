@@ -9,7 +9,7 @@ This rule is more granular than [space-in-parens](http://eslint.org/docs/rules/s
 The following patterns are not considered problems:
 
 ```js
-/* eslint wyze/space-around-conditional: 2 */
+/* eslint wyze/space-around-conditional: 'error' */
 if ( true ) {
   // Do something...
 }
@@ -34,7 +34,7 @@ switch ( true ) {
 The following patterns are considered problems:
 
 ```js
-/* eslint wyze/space-around-conditional: 2 */
+/* eslint wyze/space-around-conditional: 'error' */
 if (true ) {
   // Do something...
 }

@@ -9,7 +9,7 @@ Checks the line length of files to make sure it is under the maximum length allo
 The following patterns are not considered problems:
 
 ```js
-/* eslint wyze/max-file-length: 2 */
+/* eslint wyze/max-file-length: 'error' */
 if ( true ) {
   // Do something...
 }
@@ -34,7 +34,7 @@ switch ( true ) {
 The following patterns are considered problems:
 
 ```js
-/* eslint wyze/max-file-length: [2, 15] */
+/* eslint wyze/max-file-length: ['error', 15] */
 if ( true ) {
   // Do something...
 }
