@@ -2,9 +2,13 @@ import { RuleTester } from 'eslint'
 import rule from '../../lib/rules/space-around-conditional'
 import test from 'ava'
 
-const expectedError = ( loc, type ) => ({
-  message: `There must be a space ${loc} this paren.`,
-  type: `${type}Statement`,
+const parserOptions = {
+  ecmaVersion: 7,
+  sourceType: 'module',
+}
+const expectedError = ( loc, type, suffix = 'Statement' ) => ({
+  message: `A space is required ${loc} '${loc === 'after' ? '(' : ')'}'.`,
+  type: `${type}${suffix}`,
 })
 
 test(() => {
@@ -75,6 +79,33 @@ test(() => {
           // Do something...
         }
         `
+      },
+      {
+        code:
+        `
+        for ( const letter of 'hello' ) {
+          // Do something...
+        }
+        `,
+        parserOptions,
+      },
+      {
+        code:
+        `
+        for ( const prop in {} ) {
+          // Do something...
+        }
+        `,
+        parserOptions,
+      },
+      {
+        code:
+        `
+        try {
+          // Do something...
+        } catch ( ex ) {}
+        `,
+        parserOptions,
       },
     ],
     invalid: [
@@ -337,6 +368,117 @@ test(() => {
           expectedError('after', 'Switch'),
           expectedError('before', 'Switch')
         ]
+      },
+      {
+        code:
+        `
+        for (const letter of 'hello' ) {
+          // Do something...
+        }
+        `,
+        errors: [
+          expectedError('after', 'ForOf'),
+        ],
+        parserOptions,
+      },
+      {
+        code:
+        `
+        for ( const letter of 'hello') {
+          // Do something...
+        }
+        `,
+        errors: [
+          expectedError('before', 'ForOf')
+        ],
+        parserOptions,
+      },
+      {
+        code:
+        `
+        for (const letter of 'hello') {
+          // Do something...
+        }
+        `,
+        errors: [
+          expectedError('after', 'ForOf'),
+          expectedError('before', 'ForOf')
+        ],
+        parserOptions,
+      },
+      {
+        code:
+        `
+        for (const prop in {} ) {
+          // Do something...
+        }
+        `,
+        errors: [
+          expectedError('after', 'ForIn'),
+        ],
+        parserOptions,
+      },
+      {
+        code:
+        `
+        for ( const prop in {}) {
+          // Do something...
+        }
+        `,
+        errors: [
+          expectedError('before', 'ForIn')
+        ],
+        parserOptions,
+      },
+      {
+        code:
+        `
+        for (const prop in {}) {
+          // Do something...
+        }
+        `,
+        errors: [
+          expectedError('after', 'ForIn'),
+          expectedError('before', 'ForIn')
+        ],
+        parserOptions,
+      },
+      {
+        code:
+        `
+        try {
+          // Do something...
+        } catch (ex ) {}
+        `,
+        errors: [
+          expectedError('after', 'Catch', 'Clause'),
+        ],
+        parserOptions,
+      },
+      {
+        code:
+        `
+        try {
+          // Do something...
+        } catch ( ex) {}
+        `,
+        errors: [
+          expectedError('before', 'Catch', 'Clause')
+        ],
+        parserOptions,
+      },
+      {
+        code:
+        `
+        try {
+          // Do something...
+        } catch (ex) {}
+        `,
+        errors: [
+          expectedError('after', 'Catch', 'Clause'),
+          expectedError('before', 'Catch', 'Clause')
+        ],
+        parserOptions,
       },
     ]
   })

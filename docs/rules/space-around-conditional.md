@@ -18,6 +18,10 @@ for ( var i = 0; i < 10; i++ ) {
   // Do something...
 }
 
+for ( ;; ) {
+  // Do something
+}
+
 while ( true ) {
   // Do something...
 }
@@ -29,6 +33,18 @@ do {
 switch ( true ) {
   // Do something...
 }
+
+for ( const letter of 'hello' ) {
+  // Do something...
+}
+
+for ( const prop in {} ) {
+  // Do something...
+}
+
+try {
+  // Do something...
+} catch ( ex ) {}
 ```
 
 The following patterns are considered problems:
@@ -54,8 +70,19 @@ do {
 switch ( true) {
   // Do something...
 }
-```
 
+for (const letter in 'hello') {
+  // Do something...
+}
+
+for ( const prop of {}) {
+  // Do something...
+}
+
+try {
+  // Do something...
+} catch (ex) {}
+```
 
 ## When Not To Use It
 
