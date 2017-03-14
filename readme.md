@@ -41,6 +41,8 @@ $ npm i --save-dev eslint-plugin-wyze eslint
 
 ## Supported Rules
 
+* [max-file-length](docs/rules/max-file-length.md): Keep files to a maximum length.
+* [newline-after-export](docs/newline-after-export.md): Ensures `export` statements are followed by a newline.
 * [sort-imports](docs/rules/sort-imports.md): Sorts imports by `named` and `default`.
 * [space-around-conditional](docs/rules/space-around-conditional.md): Always put spacing around your conditional expressions.
 
@@ -74,9 +76,7 @@ We support a recommended config for the rules.
 
 ## License
 
-Copyright © 2016 [Neil Kistner](//github.com/wyze)
-
-Released under the MIT license. See [license](license) for details.
+MIT © [Neil Kistner](https://neilkistner.com)
 
 [travis-image]: https://img.shields.io/travis/wyze/eslint-plugin-wyze.svg?style=flat-square
 [travis-url]: https://travis-ci.org/wyze/eslint-plugin-wyze
@@ -85,4 +85,4 @@ Released under the MIT license. See [license](license) for details.
 [npm-url]: https://npmjs.com/package/eslint-plugin-wyze
 
 [depsdev-image]: https://img.shields.io/david/dev/wyze/eslint-plugin-wyze.svg?style=flat-square
-[depsdev-url]: https://david-dm.org/wyze/eslint-plugin-wyze#info=devDependencies
+[depsdev-url]: https://david-dm.org/wyze/eslint-plugin-wyze?type=dev

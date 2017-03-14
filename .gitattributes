@@ -1,2 +1,2 @@
 * text=auto
-readme.md merge=union
+*.js text eol=lf
