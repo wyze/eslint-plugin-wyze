@@ -22,6 +22,9 @@
     "eslintplugin",
     "eslint-plugin"
   ],
+  "engines": {
+    "node": ">=4"
+  },
   "devDependencies": {
     "ava": "^0.18.2",
     "eslint": "^3.17.1"

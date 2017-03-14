@@ -28,7 +28,7 @@ test(() => {
         }
         `,
         errors: [
-          { message: 'Max lines is set to 3. File contains 5 lines.' },
+          { message: 'Max lines set to 3. File contains 5 lines.' },
         ],
         options: [3],
       },

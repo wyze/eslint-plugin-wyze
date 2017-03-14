@@ -97,18 +97,6 @@ test(() => {
       {
         code:
           `
-          if (true) {
-            // Do something...
-          }
-          `,
-        errors: [
-          expectedError('after', 'If'),
-          expectedError('before', 'If')
-        ]
-      },
-      {
-        code:
-          `
           if (true ) {
             // Do something...
           } else if (true ) {
