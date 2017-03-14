@@ -21,6 +21,16 @@ test(() => {
       {
         code:
           `
+          if (
+            1 + 1 === 2 && true
+          ) {
+            // Do something...
+          }
+          `
+      },
+      {
+        code:
+          `
           for ( var i = 0; i < 10; i++ ) {
             // Do something...
           }
@@ -30,6 +40,14 @@ test(() => {
         code:
           `
           for ( ;; ) {
+            // Do something...
+          }
+          `
+      },
+      {
+        code:
+          `
+          for ( ;true; ) {
             // Do something...
           }
           `
