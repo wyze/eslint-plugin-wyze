@@ -1,5 +1,16 @@
+sudo: false
+
 language: node_js
+
 node_js:
   - 7
   - 6
   - 4
+
+cache:
+  directories:
+    - $HOME/.cache
+
+before_script:
+  # yarn link/npm link doesn't work for some reason :(
+  - yarn add --dev eslint-plugin-wyze
