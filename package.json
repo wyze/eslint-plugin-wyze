@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "ava": "^0.18.2",
+    "babel-eslint": "^7.1.1",
     "eslint": "^3.17.1",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-config-wyze": "^4.1.0",

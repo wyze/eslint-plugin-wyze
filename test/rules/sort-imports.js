@@ -59,7 +59,9 @@ test(() => {
         parserOptions,
         options: [
           {
-            memberSyntaxSortOrder: [ 'default', 'named', 'none', 'all' ],
+            memberSyntaxSortOrder: [
+              'default', 'type', 'named', 'none', 'all',
+            ],
           },
         ],
       },
@@ -201,6 +203,15 @@ test(() => {
         `,
         parserOptions,
       },
+      {
+        code:
+        `
+        import type { A } from 'a'
+        import * as B from 'b'
+        `,
+        parser: 'babel-eslint',
+        parserOptions,
+      },
     ],
     invalid: [
       {
@@ -290,7 +301,9 @@ test(() => {
         parserOptions,
         options: [
           {
-            memberSyntaxSortOrder: [ 'all', 'default', 'named', 'none' ],
+            memberSyntaxSortOrder: [
+              'all', 'type', 'default', 'named', 'none',
+            ],
           },
         ],
         errors: [
@@ -335,6 +348,21 @@ test(() => {
             message: "Member 'D' of the import declaration should be sorted" +
               ' alphabetically.',
             type: 'ImportSpecifier',
+          },
+        ],
+      },
+      {
+        code:
+        `
+        import B from 'b'
+        import type { C } from 'c'
+        `,
+        parser: 'babel-eslint',
+        parserOptions,
+        errors: [
+          {
+            message: "Expected 'type' syntax before 'default' syntax.",
+            type: 'ImportDeclaration',
           },
         ],
       },

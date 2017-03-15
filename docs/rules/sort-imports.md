@@ -4,14 +4,17 @@ The import statement is used to import members (functions, objects or primitives
 
 ```js
 // default - Import default member.
-import myMember from 'my-module.js';
+import myMember from 'my-module.js'
 
 // named - Import named member(s).
-import { foo, bar } from 'my-module.js';
-import { baz } from 'my-module.js';
+import { foo, bar } from 'my-module.js'
+import { baz } from 'my-module.js'
 
 // all - Import all members, where myModule contains all the exported bindings.
-import * as myModule from 'my-module.js';
+import * as myModule from 'my-module.js'
+
+// type - Import Flow types.
+import type { Foo, Bar } from 'my-module.js'
 ```
 
 The import statement can also import a module without exported bindings. Used when the module does not export anything, but runs it own code or changes the global context object.
@@ -32,6 +35,7 @@ The sort order of import declarations based on the member syntax can be configur
 The default member syntax sort order is:
 
 - `none` - import module without exported bindings.
+- `type` - import Flow types.
 - `all` - import all members provided by exported bindings.
 - `named` - import named member(s).
 - `default` - import default member.
@@ -41,6 +45,7 @@ The following example shows correct sorted import declarations:
 ```js
 /*eslint wyze/sort-imports: 'error'*/
 import 'module-without-export.js';
+import type { Foo } from 'foo.js'
 import * as foo from 'foo.js';
 import * as bar from 'bar.js';
 import { alpha, beta } from 'alpha.js';
@@ -60,6 +65,11 @@ import a from 'bar.js';
 /*eslint wyze/sort-imports: 'error'*/
 import a from 'foo.js';
 import A from 'bar.js';
+
+/*eslint wyze/sort-imports: 'error'*/
+import a from 'foo.js';
+import A from 'bar.js';
+import type { A } from 'bar.js'
 
 /*eslint wyze/sort-imports: 'error'*/
 import {b, c} from 'foo.js';
@@ -85,6 +95,10 @@ import a from 'foo.js';
 import b from 'bar.js';
 import c from 'baz.js';
 
+/* eslint wyze/sort-imports: 'error' */
+import type { C } from 'foo.js'
+import A from 'bar.js'
+
 /*eslint wyze/sort-imports: 'error'*/
 import 'foo.js'
 import * from 'bar.js';
@@ -104,7 +118,7 @@ This rule accepts an object with its properties as
 
 - `ignoreCase` (default: `false`)
 - `ignoreMemberSort` (default: `false`)
-- `memberSyntaxSortOrder` (default: `['none', 'all', 'named', 'default']`)
+- `memberSyntaxSortOrder` (default: `['none', 'type', 'all', 'named', 'default']`)
 
 Default option settings are
 
@@ -113,7 +127,7 @@ Default option settings are
     'wyze/sort-imports': ['error', {
         'ignoreCase': false,
         'ignoreMemberSort': false,
-        'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single']
+        'memberSyntaxSortOrder': ['none', 'type', 'all', 'multiple', 'single']
     }]
 }
 ```
@@ -165,14 +179,15 @@ Default is `false`.
 
 ### `memberSyntaxSortOrder`
 
-The member syntax sort order can be configured with this option. There are four different styles and the default member syntax sort order is:
+The member syntax sort order can be configured with this option. There are five different styles and the default member syntax sort order is:
 
 - `none` - import module without exported bindings.
+- `type` - import Flow types.
 - `all` - import all members provided by exported bindings.
 - `named` - import named member(s).
 - `default` - import default member.
 
-Use this option if you want a different sort order. Every style must be defined in the sort order (There shall be four items in the array).
+Use this option if you want a different sort order. Every style must be defined in the sort order (There shall be five items in the array).
 
 The following patterns are considered problems:
 
@@ -185,20 +200,24 @@ import * as b from 'bar.js';
 The following patterns are not considered problems:
 
 ```js
-/*eslint wyze/sort-imports: ['error', { 'memberSyntaxSortOrder': ['default', 'all', 'named', 'none'] }]*/
+/*eslint wyze/sort-imports: ['error', { 'memberSyntaxSortOrder': ['default', 'type', 'all', 'named', 'none'] }]*/
 
 import a from 'foo.js';
 import * as b from 'bar.js';
 
-/*eslint wyze/sort-imports: ['error', { 'memberSyntaxSortOrder': ['all', 'default', 'named', 'none'] }]*/
+/*eslint wyze/sort-imports: ['error', { 'memberSyntaxSortOrder': ['all', 'type', 'default', 'named', 'none'] }]*/
 
 import * as foo from 'foo.js';
 import z from 'zoo.js';
 import { a, b } from 'foo.js';
 
+/* eslint wyze/sort-imports: ['error', { 'memberSyntaxSortOrder': ['all', 'default', 'type', 'named', 'none'] }] */
+import z from 'zoo.js'
+import type { Z } from 'zoo.js'
+
 ```
 
-Default is `['none', 'all', 'named', 'default']`.
+Default is `['none', 'type', 'all', 'named', 'default']`.
 
 ## When Not To Use It
 
