@@ -1,3 +1,4 @@
+/* eslint-disable wyze/max-file-length */
 import { RuleTester } from 'eslint'
 import rule from '../../lib/rules/space-around-conditional'
 import test from 'ava'
@@ -20,7 +21,7 @@ test(() => {
           if ( 1 + 1 === 2 && true ) {
             // Do something...
           }
-          `
+          `,
       },
       {
         code:
@@ -30,7 +31,7 @@ test(() => {
           ) {
             // Do something...
           }
-          `
+          `,
       },
       {
         code:
@@ -38,7 +39,7 @@ test(() => {
           for ( var i = 0; i < 10; i++ ) {
             // Do something...
           }
-          `
+          `,
       },
       {
         code:
@@ -46,7 +47,7 @@ test(() => {
           for ( ;; ) {
             // Do something...
           }
-          `
+          `,
       },
       {
         code:
@@ -54,7 +55,7 @@ test(() => {
           for ( ;true; ) {
             // Do something...
           }
-          `
+          `,
       },
       {
         code:
@@ -62,7 +63,7 @@ test(() => {
           while ( true ) {
             // Do something...
           }
-          `
+          `,
       },
       {
         code:
@@ -70,7 +71,7 @@ test(() => {
           do {
             // Do something...
           } while ( true )
-          `
+          `,
       },
       {
         code:
@@ -78,7 +79,7 @@ test(() => {
         switch ( true ) {
           // Do something...
         }
-        `
+        `,
       },
       {
         code:
@@ -117,8 +118,8 @@ test(() => {
           }
           `,
         errors: [
-          expectedError('after', 'If')
-        ]
+          expectedError('after', 'If'),
+        ],
       },
       {
         code:
@@ -128,8 +129,8 @@ test(() => {
           }
           `,
         errors: [
-          expectedError('before', 'If')
-        ]
+          expectedError('before', 'If'),
+        ],
       },
       {
         code:
@@ -140,8 +141,8 @@ test(() => {
           `,
         errors: [
           expectedError('after', 'If'),
-          expectedError('before', 'If')
-        ]
+          expectedError('before', 'If'),
+        ],
       },
       {
         code:
@@ -154,8 +155,8 @@ test(() => {
           `,
         errors: [
           expectedError('after', 'If'),
-          expectedError('after', 'If')
-        ]
+          expectedError('after', 'If'),
+        ],
       },
       {
         code:
@@ -168,8 +169,8 @@ test(() => {
           `,
         errors: [
           expectedError('before', 'If'),
-          expectedError('before', 'If')
-        ]
+          expectedError('before', 'If'),
+        ],
       },
       {
         code:
@@ -184,8 +185,8 @@ test(() => {
           expectedError('after', 'If'),
           expectedError('before', 'If'),
           expectedError('after', 'If'),
-          expectedError('before', 'If')
-        ]
+          expectedError('before', 'If'),
+        ],
       },
       {
         code:
@@ -196,8 +197,8 @@ test(() => {
           `,
         errors: [
           expectedError('after', 'If'),
-          expectedError('before', 'If')
-        ]
+          expectedError('before', 'If'),
+        ],
       },
       {
         code:
@@ -207,8 +208,8 @@ test(() => {
           }
           `,
         errors: [
-          expectedError('after', 'For')
-        ]
+          expectedError('after', 'For'),
+        ],
       },
       {
         code:
@@ -218,8 +219,8 @@ test(() => {
           }
           `,
         errors: [
-          expectedError('before', 'For')
-        ]
+          expectedError('before', 'For'),
+        ],
       },
       {
         code:
@@ -230,8 +231,8 @@ test(() => {
           `,
         errors: [
           expectedError('after', 'For'),
-          expectedError('before', 'For')
-        ]
+          expectedError('before', 'For'),
+        ],
       },
       {
         code:
@@ -241,8 +242,8 @@ test(() => {
           }
           `,
         errors: [
-          expectedError('after', 'For')
-        ]
+          expectedError('after', 'For'),
+        ],
       },
       {
         code:
@@ -252,8 +253,8 @@ test(() => {
           }
           `,
         errors: [
-          expectedError('before', 'For')
-        ]
+          expectedError('before', 'For'),
+        ],
       },
       {
         code:
@@ -264,8 +265,8 @@ test(() => {
           `,
         errors: [
           expectedError('after', 'For'),
-          expectedError('before', 'For')
-        ]
+          expectedError('before', 'For'),
+        ],
       },
       {
         code:
@@ -275,8 +276,8 @@ test(() => {
           }
           `,
         errors: [
-          expectedError('after', 'While')
-        ]
+          expectedError('after', 'While'),
+        ],
       },
       {
         code:
@@ -286,8 +287,8 @@ test(() => {
           }
           `,
         errors: [
-          expectedError('before', 'While')
-        ]
+          expectedError('before', 'While'),
+        ],
       },
       {
         code:
@@ -298,8 +299,8 @@ test(() => {
           `,
         errors: [
           expectedError('after', 'While'),
-          expectedError('before', 'While')
-        ]
+          expectedError('before', 'While'),
+        ],
       },
       {
         code:
@@ -309,8 +310,8 @@ test(() => {
           } while (true )
           `,
         errors: [
-          expectedError('after', 'DoWhile')
-        ]
+          expectedError('after', 'DoWhile'),
+        ],
       },
       {
         code:
@@ -320,8 +321,8 @@ test(() => {
           } while ( true)
           `,
         errors: [
-          expectedError('before', 'DoWhile')
-        ]
+          expectedError('before', 'DoWhile'),
+        ],
       },
       {
         code:
@@ -332,8 +333,8 @@ test(() => {
           `,
         errors: [
           expectedError('after', 'DoWhile'),
-          expectedError('before', 'DoWhile')
-        ]
+          expectedError('before', 'DoWhile'),
+        ],
       },
       {
         code:
@@ -343,8 +344,8 @@ test(() => {
         }
         `,
         errors: [
-          expectedError('after', 'Switch')
-        ]
+          expectedError('after', 'Switch'),
+        ],
       },
       {
         code:
@@ -354,8 +355,8 @@ test(() => {
         }
         `,
         errors: [
-          expectedError('before', 'Switch')
-        ]
+          expectedError('before', 'Switch'),
+        ],
       },
       {
         code:
@@ -366,8 +367,8 @@ test(() => {
         `,
         errors: [
           expectedError('after', 'Switch'),
-          expectedError('before', 'Switch')
-        ]
+          expectedError('before', 'Switch'),
+        ],
       },
       {
         code:
@@ -389,7 +390,7 @@ test(() => {
         }
         `,
         errors: [
-          expectedError('before', 'ForOf')
+          expectedError('before', 'ForOf'),
         ],
         parserOptions,
       },
@@ -402,7 +403,7 @@ test(() => {
         `,
         errors: [
           expectedError('after', 'ForOf'),
-          expectedError('before', 'ForOf')
+          expectedError('before', 'ForOf'),
         ],
         parserOptions,
       },
@@ -426,7 +427,7 @@ test(() => {
         }
         `,
         errors: [
-          expectedError('before', 'ForIn')
+          expectedError('before', 'ForIn'),
         ],
         parserOptions,
       },
@@ -439,7 +440,7 @@ test(() => {
         `,
         errors: [
           expectedError('after', 'ForIn'),
-          expectedError('before', 'ForIn')
+          expectedError('before', 'ForIn'),
         ],
         parserOptions,
       },
@@ -463,7 +464,7 @@ test(() => {
         } catch ( ex) {}
         `,
         errors: [
-          expectedError('before', 'Catch', 'Clause')
+          expectedError('before', 'Catch', 'Clause'),
         ],
         parserOptions,
       },
@@ -476,10 +477,10 @@ test(() => {
         `,
         errors: [
           expectedError('after', 'Catch', 'Clause'),
-          expectedError('before', 'Catch', 'Clause')
+          expectedError('before', 'Catch', 'Clause'),
         ],
         parserOptions,
       },
-    ]
+    ],
   })
 })

@@ -11,6 +11,8 @@
   },
   "main": "index.js",
   "scripts": {
+    "lint": "eslint lib test",
+    "pretest": "npm run lint",
     "test": "ava"
   },
   "files": [
@@ -27,9 +29,26 @@
   },
   "devDependencies": {
     "ava": "^0.18.2",
-    "eslint": "^3.17.1"
+    "eslint": "^3.17.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-wyze": "^4.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-wyze": "file:./"
   },
   "peerDependencies": {
     "eslint": "^3.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "wyze/base"
+    ],
+    "rules": {
+      "array-bracket-spacing": [
+        "error",
+        "always"
+      ],
+      "id-blacklist": "off",
+      "strict": "off"
+    }
   }
 }

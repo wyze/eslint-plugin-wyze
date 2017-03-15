@@ -16,7 +16,7 @@ test(() => {
         `
         function noop() {}
         `,
-        options: [5],
+        options: [ 5 ],
       },
     ],
     invalid: [
@@ -30,7 +30,7 @@ test(() => {
         errors: [
           { message: 'Max lines set to 3. File contains 5 lines.' },
         ],
-        options: [3],
+        options: [ 3 ],
       },
     ],
   })

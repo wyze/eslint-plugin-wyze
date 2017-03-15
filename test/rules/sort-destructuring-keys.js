@@ -83,8 +83,8 @@ test(() => {
         `,
         errors: [
           {
-            message: 'Destructuring keys should be sorted in ascending order. ' +
-              '\'a\' should be before \'b\'.',
+            message: 'Destructuring keys should be sorted in ascending order.' +
+              " 'a' should be before 'b'.",
           },
         ],
         parserOptions,
@@ -97,7 +97,8 @@ test(() => {
         `,
         errors: [
           {
-            message: 'Computed properties must be placed before all other properties.',
+            message: 'Computed properties must be placed before all other ' +
+              'properties.',
           },
         ],
         parserOptions,
@@ -111,8 +112,8 @@ test(() => {
         `,
         errors: [
           {
-            message: 'Destructuring keys should be sorted in descending order. ' +
-              '\'b\' should be before \'a\'.',
+            message: 'Destructuring keys should be sorted in descending ' +
+              "order. 'b' should be before 'a'.",
           },
         ],
         parserOptions,
@@ -126,8 +127,8 @@ test(() => {
         `,
         errors: [
           {
-            message: 'Destructuring keys should be sorted in insensitive ascending order. ' +
-              '\'a\' should be before \'B\'.',
+            message: 'Destructuring keys should be sorted in insensitive ' +
+              "ascending order. 'a' should be before 'B'.",
           },
         ],
         parserOptions,
@@ -141,8 +142,8 @@ test(() => {
         `,
         errors: [
           {
-            message: 'Destructuring keys should be sorted in insensitive descending order. ' +
-              '\'B\' should be before \'a\'.',
+            message: 'Destructuring keys should be sorted in insensitive ' +
+              "descending order. 'B' should be before 'a'.",
           },
         ],
         parserOptions,
