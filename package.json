@@ -11,7 +11,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "lint": "eslint lib test",
+    "lint": "eslint lib test index.js",
     "pretest": "npm run lint",
     "test": "ava"
   },
@@ -32,7 +32,7 @@
     "babel-eslint": "^7.1.1",
     "eslint": "^3.17.1",
     "eslint-config-airbnb": "^14.1.0",
-    "eslint-config-wyze": "^4.1.0",
+    "eslint-config-wyze": "^5.0.0-beta.1",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-wyze": "file:./"
   },
@@ -44,11 +44,6 @@
       "wyze/base"
     ],
     "rules": {
-      "array-bracket-spacing": [
-        "error",
-        "always"
-      ],
-      "id-blacklist": "off",
       "strict": "off"
     }
   }

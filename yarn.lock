@@ -1090,9 +1090,9 @@ eslint-config-airbnb@^14.1.0:
   dependencies:
     eslint-config-airbnb-base "^11.1.0"
 
-eslint-config-wyze@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-wyze/-/eslint-config-wyze-4.1.0.tgz#eaf0953d3686e8472fe8e0646957b197584a7f2f"
+eslint-config-wyze@^5.0.0-beta.1:
+  version "5.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-wyze/-/eslint-config-wyze-5.0.0-beta.1.tgz#4e82ec5bcd57b130f2ef718dffaf083166760190"
 
 eslint-import-resolver-node@^0.2.0:
   version "0.2.3"
