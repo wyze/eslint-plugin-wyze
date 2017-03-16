@@ -1,6 +1,7 @@
 /* eslint-disable global-require */
 module.exports = {
   rules: {
+    'func-params-spacing': require('./lib/rules/func-params-spacing'),
     'max-file-length': require('./lib/rules/max-file-length'),
     'newline-after-export': require('./lib/rules/newline-after-export'),
     'sort-destructuring-keys': require('./lib/rules/sort-destructuring-keys'),
@@ -10,6 +11,7 @@ module.exports = {
   configs: {
     recommended: {
       rules: {
+        'wyze/func-params-spacing': 'error',
         'wyze/max-file-length': 'error',
         'wyze/newline-after-export': 'error',
         'wyze/sort-destructuring-keys': 'error',

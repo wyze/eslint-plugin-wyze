@@ -41,6 +41,7 @@ $ npm i --save-dev eslint-plugin-wyze eslint
 
 ## Supported Rules
 
+* [func-params-spacing](docs/rules/func-params-spacing.md): Enforces spacing inside function parameters.
 * [max-file-length](docs/rules/max-file-length.md): Keep files to a maximum length.
 * [newline-after-export](docs/newline-after-export.md): Ensures `export` statements are followed by a newline.
 * [sort-destructuring-keys](docs/rules/sort-destructuring-keys.md): Ensures keys are sorted for object destructuring.
@@ -67,6 +68,7 @@ We support a recommended config for the rules.
 ```js
 {
   "rules": {
+    "wyze/func-params-spacing": "error",
     "wyze/max-file-length": "error",
     "wyze/newline-after-export": "error",
     "wyze/sort-destructuring-keys": "error",
