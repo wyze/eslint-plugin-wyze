@@ -11,9 +11,11 @@
   },
   "main": "index.js",
   "scripts": {
+    "changelog": "changelog-maker --filter-release -- wyze eslint-plugin-wyze",
     "lint": "eslint lib test index.js",
     "pretest": "npm run lint",
-    "test": "ava"
+    "test": "ava",
+    "version": "node scripts/version.js"
   },
   "files": [
     "lib",
@@ -30,11 +32,14 @@
   "devDependencies": {
     "ava": "^0.18.2",
     "babel-eslint": "^7.1.1",
+    "changelog-maker": "^2.2.5",
     "eslint": "^3.17.1",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-config-wyze": "^5.0.0-beta.1",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-wyze": "file:./"
+    "eslint-plugin-wyze": "file:./",
+    "execa": "^0.6.1",
+    "read-pkg": "^2.0.0"
   },
   "peerDependencies": {
     "eslint": "^3.0.0"
@@ -45,7 +50,8 @@
     ],
     "rules": {
       "comma-dangle": [
-        "error", {
+        "error",
+        {
           "arrays": "always-multiline",
           "objects": "always-multiline",
           "imports": "always-multiline",

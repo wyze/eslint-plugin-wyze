@@ -78,6 +78,17 @@ We support a recommended config for the rules.
 }
 ```
 
+## Change Log
+
+> [Full Change Log](changelog.md)
+
+### [v2.0.0](https://github.com/wyze/eslint-plugin-wyze/releases/tag/v2.0.0) (2016-08-04)
+
+* [[`3400550106`](https://github.com/wyze/eslint-plugin-wyze/commit/3400550106)] - Upgrade ESLint dependency (Neil Kistner)
+* [[`e03c2d7b9c`](https://github.com/wyze/eslint-plugin-wyze/commit/e03c2d7b9c)] - Upgrade AVA dependency (Neil Kistner)
+* [[`7b9aea43c2`](https://github.com/wyze/eslint-plugin-wyze/commit/7b9aea43c2)] - Upgrade ESLint dependency (Neil Kistner)
+* [[`2d26113fd7`](https://github.com/wyze/eslint-plugin-wyze/commit/2d26113fd7)] - Upgrade AVA (Neil Kistner)
+
 ## License
 
 MIT © [Neil Kistner](https://neilkistner.com)
