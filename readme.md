@@ -41,6 +41,7 @@ $ npm i --save-dev eslint-plugin-wyze eslint
 
 ## Supported Rules
 
+* [func-call-arg-spacing](docs/rules/func-call-arg-spacing.md): Enforces spacing inside function call arguments.
 * [func-params-spacing](docs/rules/func-params-spacing.md): Enforces spacing inside function parameters.
 * [max-file-length](docs/rules/max-file-length.md): Keep files to a maximum length.
 * [newline-after-export](docs/newline-after-export.md): Ensures `export` statements are followed by a newline.
@@ -68,6 +69,7 @@ We support a recommended config for the rules.
 ```js
 {
   "rules": {
+    "wyze/func-call-arg-spacing": "error",
     "wyze/func-params-spacing": "error",
     "wyze/max-file-length": "error",
     "wyze/newline-after-export": "error",

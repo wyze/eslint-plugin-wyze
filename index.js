@@ -1,6 +1,7 @@
 /* eslint-disable global-require */
 module.exports = {
   rules: {
+    'func-call-arg-spacing': require('./lib/rules/func-call-arg-spacing'),
     'func-params-spacing': require('./lib/rules/func-params-spacing'),
     'max-file-length': require('./lib/rules/max-file-length'),
     'newline-after-export': require('./lib/rules/newline-after-export'),
@@ -11,6 +12,7 @@ module.exports = {
   configs: {
     recommended: {
       rules: {
+        'wyze/func-call-arg-spacing': 'error',
         'wyze/func-params-spacing': 'error',
         'wyze/max-file-length': 'error',
         'wyze/newline-after-export': 'error',
