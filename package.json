@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-wyze",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "My personal ESLint rules.",
   "license": "MIT",
   "repository": "wyze/eslint-plugin-wyze",
