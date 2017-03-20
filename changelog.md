@@ -1,5 +1,10 @@
 ## Change Log
 
+### [v3.0.1](https://github.com/wyze/eslint-plugin-wyze/releases/tag/v3.0.1) (2017-03-20)
+
+* [[`0e722ea4f1`](https://github.com/wyze/eslint-plugin-wyze/commit/0e722ea4f1)] - Fix multi-line issue with `func-params-spacing` rule (Neil Kistner)
+* [[`b271feee4d`](https://github.com/wyze/eslint-plugin-wyze/commit/b271feee4d)] - Fix bug in `space-params-spacing` rule (Neil Kistner)
+
 ### [v3.0.0](https://github.com/wyze/eslint-plugin-wyze/releases/tag/v3.0.0) (2017-03-19)
 
 * [[`5874cea542`](https://github.com/wyze/eslint-plugin-wyze/commit/5874cea542)] - Add `func-call-arg-spacing` rule (Neil Kistner)
