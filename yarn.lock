@@ -1198,7 +1198,7 @@ eslint-plugin-import@^2.2.0:
     pkg-up "^1.0.0"
 
 "eslint-plugin-wyze@file:./":
-  version "2.0.0"
+  version "3.0.0"
 
 eslint@^3.17.1:
   version "3.17.1"
