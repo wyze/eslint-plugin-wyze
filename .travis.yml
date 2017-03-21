@@ -11,6 +11,6 @@ cache:
   directories:
     - $HOME/.cache
 
-before_script:
-  # yarn link/npm link doesn't work for some reason :(
-  - yarn add --dev eslint-plugin-wyze
+before_install:
+  # Ensure npm 4 on Node 4
+  - '[ "${TRAVIS_NODE_VERSION}" != 4 ] || npm install -g npm@latest'
