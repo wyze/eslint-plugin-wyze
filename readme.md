@@ -41,13 +41,13 @@ $ npm i --save-dev eslint-plugin-wyze eslint
 
 ## Supported Rules
 
-* [func-call-arg-spacing](docs/rules/func-call-arg-spacing.md): Enforces spacing inside function call arguments.
-* [func-params-spacing](docs/rules/func-params-spacing.md): Enforces spacing inside function parameters.
+* [func-call-arg-spacing](docs/rules/func-call-arg-spacing.md): Enforces spacing inside function call arguments. _(fixable)_
+* [func-params-spacing](docs/rules/func-params-spacing.md): Enforces spacing inside function parameters. _(fixable)_
 * [max-file-length](docs/rules/max-file-length.md): Keep files to a maximum length.
 * [newline-after-export](docs/newline-after-export.md): Ensures `export` statements are followed by a newline.
 * [sort-destructuring-keys](docs/rules/sort-destructuring-keys.md): Ensures keys are sorted for object destructuring.
 * [sort-imports](docs/rules/sort-imports.md): Sorts imports by `named` and `default`.
-* [space-around-conditional](docs/rules/space-around-conditional.md): Always put spacing around your conditional expressions.
+* [space-around-conditional](docs/rules/space-around-conditional.md): Always put spacing around your conditional expressions. _(fixable)_
 
 ## Recommended Config
 

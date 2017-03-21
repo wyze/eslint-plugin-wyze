@@ -2,6 +2,8 @@
 
 Always put spacing around your conditional expressions.
 
+> The `--fix` option on the command line can automatically fix some of the problems reported by this rule.
+
 ## Rule Details
 
 This rule is more granular than [space-in-parens](http://eslint.org/docs/rules/space-in-parens). This rule is limited to conditional expressions in control flow statements only. `If`, `For`, `While`, etc.
