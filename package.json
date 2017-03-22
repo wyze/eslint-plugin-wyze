@@ -19,7 +19,8 @@
     "version": "node scripts/version.js"
   },
   "files": [
-    "lib",
+    "!**/__tests__/",
+    "lib/**/*.js",
     "*.js"
   ],
   "keywords": [
