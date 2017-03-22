@@ -84,10 +84,17 @@ We support a recommended config for the rules.
 
 > [Full Change Log](changelog.md)
 
-### [v3.0.1](https://github.com/wyze/eslint-plugin-wyze/releases/tag/v3.0.1) (2017-03-20)
+### [v3.1.0](https://github.com/wyze/eslint-plugin-wyze/releases/tag/v3.1.0) (2017-03-22)
 
-* [[`0e722ea4f1`](https://github.com/wyze/eslint-plugin-wyze/commit/0e722ea4f1)] - Fix multi-line issue with `func-params-spacing` rule (Neil Kistner)
-* [[`b271feee4d`](https://github.com/wyze/eslint-plugin-wyze/commit/b271feee4d)] - Fix bug in `space-params-spacing` rule (Neil Kistner)
+* [[`04c7514816`](https://github.com/wyze/eslint-plugin-wyze/commit/04c7514816)] - Exclude test files from npm package (Neil Kistner)
+* [[`d5af4d8498`](https://github.com/wyze/eslint-plugin-wyze/commit/d5af4d8498)] - Document some functions in `sort-destructuring-keys` rule (Neil Kistner)
+* [[`a5b65319ac`](https://github.com/wyze/eslint-plugin-wyze/commit/a5b65319ac)] - Fix false positives for `func-params-spacing` rule (Neil Kistner)
+* [[`3c4fa82012`](https://github.com/wyze/eslint-plugin-wyze/commit/3c4fa82012)] - Change message for `newline-after-export` and make fixable (Neil Kistner)
+* [[`4a092c914f`](https://github.com/wyze/eslint-plugin-wyze/commit/4a092c914f)] - Add fixer to spacing rules (Neil Kistner)
+* [[`701e2dcca3`](https://github.com/wyze/eslint-plugin-wyze/commit/701e2dcca3)] - Fix edge case with `func-params-spacing` rule (Neil Kistner)
+* [[`d0eab7e55e`](https://github.com/wyze/eslint-plugin-wyze/commit/d0eab7e55e)] - Fix bug in `sort-destructuring-keys` with rest object (Neil Kistner)
+* [[`503ff728af`](https://github.com/wyze/eslint-plugin-wyze/commit/503ff728af)] - Fix bug in `func-params-spacing` with class methods (Neil Kistner)
+* [[`9ce64d019f`](https://github.com/wyze/eslint-plugin-wyze/commit/9ce64d019f)] - Change build process again (Neil Kistner)
 
 ## License
 
