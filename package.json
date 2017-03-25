@@ -15,7 +15,7 @@
     "lint": "eslint lib test index.js",
     "prelint": "npm link && npm link eslint-plugin-wyze",
     "pretest": "npm run lint",
-    "test": "ava",
+    "test": "jest",
     "version": "node scripts/version.js"
   },
   "files": [
@@ -32,20 +32,41 @@
     "node": ">=4"
   },
   "devDependencies": {
-    "ava": "^0.18.2",
     "babel-eslint": "^7.1.1",
+    "babel-jest": "^19.0.0",
+    "babel-plugin-transform-inline-imports-commonjs": "^1.2.0",
+    "babel-preset-env": "^1.2.2",
     "changelog-maker": "^2.2.5",
     "eslint": "^3.17.1",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-config-wyze": "^5.0.0-beta.1",
     "eslint-plugin-import": "^2.2.0",
     "execa": "^0.6.1",
+    "jest": "^19.0.2",
     "read-pkg": "^2.0.0"
   },
   "peerDependencies": {
     "eslint": "^3.0.0"
   },
+  "babel": {
+    "plugins": [
+      "transform-inline-imports-commonjs"
+    ],
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": true
+          }
+        }
+      ]
+    ]
+  },
   "eslintConfig": {
+    "env": {
+      "jest": true
+    },
     "extends": [
       "wyze/base"
     ],
