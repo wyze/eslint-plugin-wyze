@@ -1,0 +1,225 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`space-around-conditional applies fixes to do statement 1`] = `
+Object {
+  "errorCount": 0,
+  "results": Array [
+    Object {
+      "errorCount": 0,
+      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/space-around-conditional/do-statement.js",
+      "messages": Array [],
+      "output": "
+do {
+  // Do something...
+} while ( true )
+
+do {
+  // Do something...
+} while ( true )
+
+do {
+  // Do something...
+} while ( true )
+",
+      "warningCount": 0,
+    },
+  ],
+  "warningCount": 0,
+}
+`;
+
+exports[`space-around-conditional applies fixes to for statement 1`] = `
+Object {
+  "errorCount": 0,
+  "results": Array [
+    Object {
+      "errorCount": 0,
+      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/space-around-conditional/for-statement.js",
+      "messages": Array [],
+      "output": "
+for ( var i = 0; i < 10; i++ ) {
+  // Do something...
+}
+
+for ( ;; ) {
+  // Do something...
+}
+
+for ( ;true; ) {
+  // Do something...
+}
+",
+      "warningCount": 0,
+    },
+  ],
+  "warningCount": 0,
+}
+`;
+
+exports[`space-around-conditional applies fixes to for..in statement 1`] = `
+Object {
+  "errorCount": 0,
+  "results": Array [
+    Object {
+      "errorCount": 0,
+      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/space-around-conditional/for-in-statement.js",
+      "messages": Array [],
+      "output": "
+for ( const prop in {} ) {
+  // Do something...
+}
+
+for ( const prop in {} ) {
+  // Do something...
+}
+
+for ( const prop in {} ) {
+  // Do something...
+}
+",
+      "warningCount": 0,
+    },
+  ],
+  "warningCount": 0,
+}
+`;
+
+exports[`space-around-conditional applies fixes to for..of statement 1`] = `
+Object {
+  "errorCount": 0,
+  "results": Array [
+    Object {
+      "errorCount": 0,
+      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/space-around-conditional/for-of-statement.js",
+      "messages": Array [],
+      "output": "
+for ( const letter of 'hello' ) {
+  // Do something...
+}
+
+for ( const letter of 'hello' ) {
+  // Do something...
+}
+
+for ( const letter of 'hello' ) {
+  // Do something...
+}
+",
+      "warningCount": 0,
+    },
+  ],
+  "warningCount": 0,
+}
+`;
+
+exports[`space-around-conditional applies fixes to if statement 1`] = `
+Object {
+  "errorCount": 0,
+  "results": Array [
+    Object {
+      "errorCount": 0,
+      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/space-around-conditional/if-statement.js",
+      "messages": Array [],
+      "output": "
+if ( 1 + 1 === 2 && true ) {
+  // Do something...
+}
+
+if ( 1 + 1 === 2 && true ) {
+  // Do something...
+}
+
+if ( 1 + 1 === 2 && true ) {
+  // Do something...
+}
+",
+      "warningCount": 0,
+    },
+  ],
+  "warningCount": 0,
+}
+`;
+
+exports[`space-around-conditional applies fixes to switch statement 1`] = `
+Object {
+  "errorCount": 0,
+  "results": Array [
+    Object {
+      "errorCount": 0,
+      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/space-around-conditional/switch-statement.js",
+      "messages": Array [],
+      "output": "
+switch ( true ) {
+  // Do something...
+}
+
+switch ( true ) {
+  // Do something...
+}
+
+switch ( true ) {
+  // Do something...
+}
+",
+      "warningCount": 0,
+    },
+  ],
+  "warningCount": 0,
+}
+`;
+
+exports[`space-around-conditional applies fixes to try..catch statement 1`] = `
+Object {
+  "errorCount": 0,
+  "results": Array [
+    Object {
+      "errorCount": 0,
+      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/space-around-conditional/try-catch-statement.js",
+      "messages": Array [],
+      "output": "
+try {
+  // Do something...
+} catch ( ex ) {}
+
+try {
+  // Do something...
+} catch ( ex ) {}
+
+try {
+  // Do something...
+} catch ( ex ) {}
+",
+      "warningCount": 0,
+    },
+  ],
+  "warningCount": 0,
+}
+`;
+
+exports[`space-around-conditional applies fixes to while statement 1`] = `
+Object {
+  "errorCount": 0,
+  "results": Array [
+    Object {
+      "errorCount": 0,
+      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/space-around-conditional/while-statement.js",
+      "messages": Array [],
+      "output": "
+while ( true ) {
+  // Do something...
+}
+
+while ( true ) {
+  // Do something...
+}
+
+while ( true ) {
+  // Do something...
+}
+",
+      "warningCount": 0,
+    },
+  ],
+  "warningCount": 0,
+}
+`;

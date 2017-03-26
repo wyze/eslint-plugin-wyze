@@ -12,7 +12,7 @@
   "main": "index.js",
   "scripts": {
     "changelog": "changelog-maker --filter-release -- wyze eslint-plugin-wyze",
-    "lint": "eslint lib test index.js",
+    "lint": "eslint lib index.js",
     "prelint": "npm link && npm link eslint-plugin-wyze",
     "pretest": "npm run lint",
     "test": "jest",
@@ -83,5 +83,11 @@
       ],
       "strict": "off"
     }
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/fixtures/",
+      "/node_modules/"
+    ]
   }
 }
