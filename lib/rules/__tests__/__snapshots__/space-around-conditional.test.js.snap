@@ -6,7 +6,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/space-around-conditional/do-statement.js",
+      "filePath": "../lib/rules/__tests__/fixtures/space-around-conditional/do-statement.js",
       "messages": Array [],
       "output": "
 do {
@@ -34,7 +34,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/space-around-conditional/for-statement.js",
+      "filePath": "../lib/rules/__tests__/fixtures/space-around-conditional/for-statement.js",
       "messages": Array [],
       "output": "
 for ( var i = 0; i < 10; i++ ) {
@@ -62,7 +62,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/space-around-conditional/for-in-statement.js",
+      "filePath": "../lib/rules/__tests__/fixtures/space-around-conditional/for-in-statement.js",
       "messages": Array [],
       "output": "
 for ( const prop in {} ) {
@@ -90,7 +90,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/space-around-conditional/for-of-statement.js",
+      "filePath": "../lib/rules/__tests__/fixtures/space-around-conditional/for-of-statement.js",
       "messages": Array [],
       "output": "
 for ( const letter of 'hello' ) {
@@ -118,7 +118,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/space-around-conditional/if-statement.js",
+      "filePath": "../lib/rules/__tests__/fixtures/space-around-conditional/if-statement.js",
       "messages": Array [],
       "output": "
 if ( 1 + 1 === 2 && true ) {
@@ -146,7 +146,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/space-around-conditional/switch-statement.js",
+      "filePath": "../lib/rules/__tests__/fixtures/space-around-conditional/switch-statement.js",
       "messages": Array [],
       "output": "
 switch ( true ) {
@@ -174,7 +174,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/space-around-conditional/try-catch-statement.js",
+      "filePath": "../lib/rules/__tests__/fixtures/space-around-conditional/try-catch-statement.js",
       "messages": Array [],
       "output": "
 try {
@@ -202,7 +202,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/space-around-conditional/while-statement.js",
+      "filePath": "../lib/rules/__tests__/fixtures/space-around-conditional/while-statement.js",
       "messages": Array [],
       "output": "
 while ( true ) {

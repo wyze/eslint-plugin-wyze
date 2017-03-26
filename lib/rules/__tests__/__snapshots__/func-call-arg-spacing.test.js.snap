@@ -6,7 +6,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/func-call-arg-spacing/callbacks.js",
+      "filePath": "../lib/rules/__tests__/fixtures/func-call-arg-spacing/callbacks.js",
       "messages": Array [],
       "output": "
 const a = properties
@@ -38,7 +38,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/func-call-arg-spacing/no-args.js",
+      "filePath": "../lib/rules/__tests__/fixtures/func-call-arg-spacing/no-args.js",
       "messages": Array [],
       "output": "
 const f = ( a, b ) => a + b
@@ -58,7 +58,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/func-call-arg-spacing/multi-line.js",
+      "filePath": "../lib/rules/__tests__/fixtures/func-call-arg-spacing/multi-line.js",
       "messages": Array [],
       "output": "
 const f = ( a, b ) => a + b
@@ -83,7 +83,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/func-call-arg-spacing/single-line.js",
+      "filePath": "../lib/rules/__tests__/fixtures/func-call-arg-spacing/single-line.js",
       "messages": Array [],
       "output": "
 const f = ( a, b ) => a + b

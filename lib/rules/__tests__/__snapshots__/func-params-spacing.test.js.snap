@@ -6,7 +6,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/func-params-spacing/callbacks.js",
+      "filePath": "../lib/rules/__tests__/fixtures/func-params-spacing/callbacks.js",
       "messages": Array [],
       "output": "
 const a = b.reduce(( c, d ) => c + d, 0)
@@ -28,7 +28,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/func-params-spacing/classes.js",
+      "filePath": "../lib/rules/__tests__/fixtures/func-params-spacing/classes.js",
       "messages": Array [],
       "output": "
 class Component {
@@ -62,7 +62,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/func-params-spacing/destructuring.js",
+      "filePath": "../lib/rules/__tests__/fixtures/func-params-spacing/destructuring.js",
       "messages": Array [],
       "output": "
 const foo = ({ a }) => {}
@@ -87,7 +87,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/func-params-spacing/flowtype.js",
+      "filePath": "../lib/rules/__tests__/fixtures/func-params-spacing/flowtype.js",
       "messages": Array [],
       "output": "
 const foo = ( a: string ) => {}
@@ -113,7 +113,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/func-params-spacing/function-declaration.js",
+      "filePath": "../lib/rules/__tests__/fixtures/func-params-spacing/function-declaration.js",
       "messages": Array [],
       "output": "
 function foo( a, b, c ) {}
@@ -134,7 +134,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/func-params-spacing/function-expression.js",
+      "filePath": "../lib/rules/__tests__/fixtures/func-params-spacing/function-expression.js",
       "messages": Array [],
       "output": "
 const foo = function( a, b, c ) {}
@@ -159,7 +159,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/func-params-spacing/multi-line.js",
+      "filePath": "../lib/rules/__tests__/fixtures/func-params-spacing/multi-line.js",
       "messages": Array [],
       "output": "
 const foo = ({

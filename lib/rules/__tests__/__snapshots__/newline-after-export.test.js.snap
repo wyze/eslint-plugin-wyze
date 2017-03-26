@@ -6,7 +6,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/newline-after-export/default.js",
+      "filePath": "../lib/rules/__tests__/fixtures/newline-after-export/default.js",
       "messages": Array [],
       "output": "
 export default 1
@@ -26,7 +26,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/newline-after-export/named.js",
+      "filePath": "../lib/rules/__tests__/fixtures/newline-after-export/named.js",
       "messages": Array [],
       "output": "
 export const a = 1

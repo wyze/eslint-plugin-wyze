@@ -6,7 +6,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/sort-imports/all-syntax.js",
+      "filePath": "../lib/rules/__tests__/fixtures/sort-imports/all-syntax.js",
       "messages": Array [],
       "output": "
 import * as Foo from 'foo.js'
@@ -27,7 +27,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/sort-imports/default-syntax.js",
+      "filePath": "../lib/rules/__tests__/fixtures/sort-imports/default-syntax.js",
       "messages": Array [],
       "output": "
 import A from 'bar.js'
@@ -48,7 +48,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/sort-imports/named-syntax.js",
+      "filePath": "../lib/rules/__tests__/fixtures/sort-imports/named-syntax.js",
       "messages": Array [],
       "output": "
 import { A, D, b, e } from 'baz.js'
@@ -69,7 +69,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/sort-imports/none-syntax.js",
+      "filePath": "../lib/rules/__tests__/fixtures/sort-imports/none-syntax.js",
       "messages": Array [],
       "output": "
 import 'bar.js'
@@ -90,7 +90,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/sort-imports/type-syntax.js",
+      "filePath": "../lib/rules/__tests__/fixtures/sort-imports/type-syntax.js",
       "messages": Array [],
       "output": "
 import 'd'
@@ -111,7 +111,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/sort-imports/option-ignore-case.js",
+      "filePath": "../lib/rules/__tests__/fixtures/sort-imports/option-ignore-case.js",
       "messages": Array [],
       "output": "
 import a from 'a'
@@ -130,7 +130,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/sort-imports/option-ignore-member-sort.js",
+      "filePath": "../lib/rules/__tests__/fixtures/sort-imports/option-ignore-member-sort.js",
       "messages": Array [],
       "output": "
 import { E, f, g, H } from 'b'
@@ -149,7 +149,7 @@ Object {
   "results": Array [
     Object {
       "errorCount": 0,
-      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/sort-imports/option-member-syntax-sort-order.js",
+      "filePath": "../lib/rules/__tests__/fixtures/sort-imports/option-member-syntax-sort-order.js",
       "messages": Array [],
       "output": "
 // memberSyntaxSortOrder: [ 'type', 'all', 'none', 'default', 'named' ]
