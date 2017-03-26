@@ -46,7 +46,7 @@ $ npm i --save-dev eslint-plugin-wyze eslint
 * [max-file-length](docs/rules/max-file-length.md): Keep files to a maximum length.
 * [newline-after-export](docs/newline-after-export.md): Ensures `export` statements are followed by a newline. _(fixable)_
 * [sort-destructuring-keys](docs/rules/sort-destructuring-keys.md): Ensures keys are sorted for object destructuring.
-* [sort-imports](docs/rules/sort-imports.md): Sorts imports by `named` and `default`.
+* [sort-imports](docs/rules/sort-imports.md): Sorts imports by `named` and `default`. _(fixable)_
 * [space-around-conditional](docs/rules/space-around-conditional.md): Always put spacing around your conditional expressions. _(fixable)_
 
 ## Recommended Config

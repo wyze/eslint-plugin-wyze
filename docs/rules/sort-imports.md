@@ -2,6 +2,8 @@
 
 The import statement is used to import members (functions, objects or primitives) that have been exported from an external module. Using a specific member syntax:
 
+> The `--fix` option on the command line can automatically fix some of the problems reported by this rule.
+
 ```js
 // default - Import default member.
 import myMember from 'my-module.js'

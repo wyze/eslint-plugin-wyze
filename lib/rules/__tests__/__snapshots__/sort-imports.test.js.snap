@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sort-imports applies fixes to all imports 1`] = `
+Object {
+  "errorCount": 0,
+  "results": Array [
+    Object {
+      "errorCount": 0,
+      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/sort-imports/all-syntax.js",
+      "messages": Array [],
+      "output": "
+import * as Foo from 'foo.js'
+import * as bar from 'bar.js'
+import * as baz from 'baz.js'
+import * as foo from 'foo.js'
+",
+      "warningCount": 0,
+    },
+  ],
+  "warningCount": 0,
+}
+`;
+
+exports[`sort-imports applies fixes to default imports 1`] = `
+Object {
+  "errorCount": 0,
+  "results": Array [
+    Object {
+      "errorCount": 0,
+      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/sort-imports/default-syntax.js",
+      "messages": Array [],
+      "output": "
+import A from 'bar.js'
+import C from 'baz.js'
+import a from 'foo.js'
+import b from 'foobar.js'
+",
+      "warningCount": 0,
+    },
+  ],
+  "warningCount": 0,
+}
+`;
+
+exports[`sort-imports applies fixes to named imports 1`] = `
+Object {
+  "errorCount": 0,
+  "results": Array [
+    Object {
+      "errorCount": 0,
+      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/sort-imports/named-syntax.js",
+      "messages": Array [],
+      "output": "
+import { A, D, b, e } from 'baz.js'
+import { C, b } from 'foobar.js'
+import { a, b } from 'bar.js'
+import { b, c } from 'foo.js'
+",
+      "warningCount": 0,
+    },
+  ],
+  "warningCount": 0,
+}
+`;
+
+exports[`sort-imports applies fixes to no imports 1`] = `
+Object {
+  "errorCount": 0,
+  "results": Array [
+    Object {
+      "errorCount": 0,
+      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/sort-imports/none-syntax.js",
+      "messages": Array [],
+      "output": "
+import 'bar.js'
+import 'baz.js'
+import { b, c } from 'foobar.js'
+import a from 'foo.js'
+",
+      "warningCount": 0,
+    },
+  ],
+  "warningCount": 0,
+}
+`;
+
+exports[`sort-imports applies fixes to type imports 1`] = `
+Object {
+  "errorCount": 0,
+  "results": Array [
+    Object {
+      "errorCount": 0,
+      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/sort-imports/type-syntax.js",
+      "messages": Array [],
+      "output": "
+import 'd'
+import type { A } from 'a'
+import type { C } from 'c'
+import B from 'b'
+",
+      "warningCount": 0,
+    },
+  ],
+  "warningCount": 0,
+}
+`;
+
+exports[`sort-imports applies fixes with ignoreCase option 1`] = `
+Object {
+  "errorCount": 0,
+  "results": Array [
+    Object {
+      "errorCount": 0,
+      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/sort-imports/option-ignore-case.js",
+      "messages": Array [],
+      "output": "
+import a from 'a'
+import B from 'b'
+",
+      "warningCount": 0,
+    },
+  ],
+  "warningCount": 0,
+}
+`;
+
+exports[`sort-imports applies fixes with ignoreMemberSort option 1`] = `
+Object {
+  "errorCount": 0,
+  "results": Array [
+    Object {
+      "errorCount": 0,
+      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/sort-imports/option-ignore-member-sort.js",
+      "messages": Array [],
+      "output": "
+import { E, f, g, H } from 'b'
+import { a, B, c, D } from 'a'
+",
+      "warningCount": 0,
+    },
+  ],
+  "warningCount": 0,
+}
+`;
+
+exports[`sort-imports applies fixes with memberSyntaxSortOrder option 1`] = `
+Object {
+  "errorCount": 0,
+  "results": Array [
+    Object {
+      "errorCount": 0,
+      "filePath": "/Users/neil/Projects/personal/eslint-plugin-wyze/lib/rules/__tests__/fixtures/sort-imports/option-member-syntax-sort-order.js",
+      "messages": Array [],
+      "output": "
+// memberSyntaxSortOrder: [ 'type', 'all', 'none', 'default', 'named' ]
+
+import type { D } from 'd'
+import * as b from 'b'
+import 'c'
+import a from 'a'
+import { e } from 'e'
+",
+      "warningCount": 0,
+    },
+  ],
+  "warningCount": 0,
+}
+`;
