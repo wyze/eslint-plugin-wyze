@@ -84,17 +84,14 @@ We support a recommended config for the rules.
 
 > [Full Change Log](changelog.md)
 
-### [v3.1.0](https://github.com/wyze/eslint-plugin-wyze/releases/tag/v3.1.0) (2017-03-22)
+### [v3.2.0](https://github.com/wyze/eslint-plugin-wyze/releases/tag/v3.2.0) (2017-03-26)
 
-* [[`04c7514816`](https://github.com/wyze/eslint-plugin-wyze/commit/04c7514816)] - Exclude test files from npm package (Neil Kistner)
-* [[`d5af4d8498`](https://github.com/wyze/eslint-plugin-wyze/commit/d5af4d8498)] - Document some functions in `sort-destructuring-keys` rule (Neil Kistner)
-* [[`a5b65319ac`](https://github.com/wyze/eslint-plugin-wyze/commit/a5b65319ac)] - Fix false positives for `func-params-spacing` rule (Neil Kistner)
-* [[`3c4fa82012`](https://github.com/wyze/eslint-plugin-wyze/commit/3c4fa82012)] - Change message for `newline-after-export` and make fixable (Neil Kistner)
-* [[`4a092c914f`](https://github.com/wyze/eslint-plugin-wyze/commit/4a092c914f)] - Add fixer to spacing rules (Neil Kistner)
-* [[`701e2dcca3`](https://github.com/wyze/eslint-plugin-wyze/commit/701e2dcca3)] - Fix edge case with `func-params-spacing` rule (Neil Kistner)
-* [[`d0eab7e55e`](https://github.com/wyze/eslint-plugin-wyze/commit/d0eab7e55e)] - Fix bug in `sort-destructuring-keys` with rest object (Neil Kistner)
-* [[`503ff728af`](https://github.com/wyze/eslint-plugin-wyze/commit/503ff728af)] - Fix bug in `func-params-spacing` with class methods (Neil Kistner)
-* [[`9ce64d019f`](https://github.com/wyze/eslint-plugin-wyze/commit/9ce64d019f)] - Change build process again (Neil Kistner)
+* [[`d73bc26394`](https://github.com/wyze/eslint-plugin-wyze/commit/d73bc26394)] - Add filepath serializer to Jest to make snapshots valid on Travis (Neil Kistner)
+* [[`72c04f70ac`](https://github.com/wyze/eslint-plugin-wyze/commit/72c04f70ac)] - Upgrade dependencies (Neil Kistner)
+* [[`9969920a30`](https://github.com/wyze/eslint-plugin-wyze/commit/9969920a30)] - Add snapshot tests for `sort-import` rule fixes (Neil Kistner)
+* [[`ace0a759ed`](https://github.com/wyze/eslint-plugin-wyze/commit/ace0a759ed)] - Add snapshot tests for `--fix` tests (Neil Kistner)
+* [[`94c9adf380`](https://github.com/wyze/eslint-plugin-wyze/commit/94c9adf380)] - Switch to Jest for testing (Neil Kistner)
+* [[`8a63051086`](https://github.com/wyze/eslint-plugin-wyze/commit/8a63051086)] - Make sort-imports fix the sort order (#10) (Justin Anastos)
 
 ## License
 
