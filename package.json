@@ -84,15 +84,5 @@
       ],
       "strict": "off"
     }
-  },
-  "jest": {
-    "snapshotSerializers": [
-      "<rootDir>/lib/rules/__tests__/serializers/serializer-eslint-filepath"
-    ],
-    "testPathIgnorePatterns": [
-      "/fixtures/",
-      "/node_modules/",
-      "/serializers/"
-    ]
   }
 }
