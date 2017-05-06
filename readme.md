@@ -84,14 +84,10 @@ We support a recommended config for the rules.
 
 > [Full Change Log](changelog.md)
 
-### [v3.2.0](https://github.com/wyze/eslint-plugin-wyze/releases/tag/v3.2.0) (2017-03-26)
+### [v3.2.1](https://github.com/wyze/eslint-plugin-wyze/releases/tag/v3.2.1) (2017-05-06)
 
-* [[`d73bc26394`](https://github.com/wyze/eslint-plugin-wyze/commit/d73bc26394)] - Add filepath serializer to Jest to make snapshots valid on Travis (Neil Kistner)
-* [[`72c04f70ac`](https://github.com/wyze/eslint-plugin-wyze/commit/72c04f70ac)] - Upgrade dependencies (Neil Kistner)
-* [[`9969920a30`](https://github.com/wyze/eslint-plugin-wyze/commit/9969920a30)] - Add snapshot tests for `sort-import` rule fixes (Neil Kistner)
-* [[`ace0a759ed`](https://github.com/wyze/eslint-plugin-wyze/commit/ace0a759ed)] - Add snapshot tests for `--fix` tests (Neil Kistner)
-* [[`94c9adf380`](https://github.com/wyze/eslint-plugin-wyze/commit/94c9adf380)] - Switch to Jest for testing (Neil Kistner)
-* [[`8a63051086`](https://github.com/wyze/eslint-plugin-wyze/commit/8a63051086)] - Make sort-imports fix the sort order (#10) (Justin Anastos)
+* [[`117195538d`](https://github.com/wyze/eslint-plugin-wyze/commit/117195538d)] - Use original delimiter when fixing specifiers (#11) (Justin Anastos)
+* [[`eb4054d07e`](https://github.com/wyze/eslint-plugin-wyze/commit/eb4054d07e)] - Remove snapshot tests and use RuleTester for output validation (Neil Kistner)
 
 ## License
 

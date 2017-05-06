@@ -1,5 +1,10 @@
 ## Change Log
 
+### [v3.2.1](https://github.com/wyze/eslint-plugin-wyze/releases/tag/v3.2.1) (2017-05-06)
+
+* [[`117195538d`](https://github.com/wyze/eslint-plugin-wyze/commit/117195538d)] - Use original delimiter when fixing specifiers (#11) (Justin Anastos)
+* [[`eb4054d07e`](https://github.com/wyze/eslint-plugin-wyze/commit/eb4054d07e)] - Remove snapshot tests and use RuleTester for output validation (Neil Kistner)
+
 ### [v3.2.0](https://github.com/wyze/eslint-plugin-wyze/releases/tag/v3.2.0) (2017-03-26)
 
 * [[`d73bc26394`](https://github.com/wyze/eslint-plugin-wyze/commit/d73bc26394)] - Add filepath serializer to Jest to make snapshots valid on Travis (Neil Kistner)
