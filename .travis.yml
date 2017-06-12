@@ -13,4 +13,4 @@ cache:
 
 before_install:
   # Ensure npm 4 on Node 4
-  - '[ "${TRAVIS_NODE_VERSION}" != 4 ] || npm install -g npm@latest'
+  - '[ "${TRAVIS_NODE_VERSION}" != 4 ] || npm install -g npm@4'
