@@ -1,5 +1,14 @@
 ## Change Log
 
+### [v3.3.0](https://github.com/wyze/eslint-plugin-wyze/releases/tag/v3.3.0) (2017-06-12)
+
+* [[`354de2e304`](https://github.com/wyze/eslint-plugin-wyze/commit/354de2e304)] - Update `eslint` peer dependency (Neil Kistner)
+* [[`385b13bcf6`](https://github.com/wyze/eslint-plugin-wyze/commit/385b13bcf6)] - Upgrade dependencies (Neil Kistner)
+* [[`9211cff131`](https://github.com/wyze/eslint-plugin-wyze/commit/9211cff131)] - Bring in `write-changelog` to manage changelog (Neil Kistner)
+* [[`ea99f192fb`](https://github.com/wyze/eslint-plugin-wyze/commit/ea99f192fb)] - Fixed tests failing due to repeated variable names in mock code (#16) (Sean Kemmis)
+* [[`6ee089b049`](https://github.com/wyze/eslint-plugin-wyze/commit/6ee089b049)] - Added test and fixed sort-imports --fix bug (#15) (Sean Kemmis)
+* [[`9040d0ca4b`](https://github.com/wyze/eslint-plugin-wyze/commit/9040d0ca4b)] - Ensure we install npm 4 instead of latest (Neil Kistner)
+
 ### [v3.2.1](https://github.com/wyze/eslint-plugin-wyze/releases/tag/v3.2.1) (2017-05-06)
 
 * [[`117195538d`](https://github.com/wyze/eslint-plugin-wyze/commit/117195538d)] - Use original delimiter when fixing specifiers (#11) (Justin Anastos)
