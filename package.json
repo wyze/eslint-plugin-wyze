@@ -11,12 +11,11 @@
   },
   "main": "index.js",
   "scripts": {
-    "changelog": "changelog-maker --filter-release -- wyze eslint-plugin-wyze",
     "lint": "eslint lib index.js",
     "prelint": "npm link && npm link eslint-plugin-wyze",
     "pretest": "npm run lint",
     "test": "jest",
-    "version": "node scripts/version.js"
+    "version": "write-changelog"
   },
   "files": [
     "!**/__tests__/",
@@ -42,9 +41,8 @@
     "eslint-config-wyze": "^5.0.0-beta.3",
     "eslint-plugin-eslint-comments": "^1.0.0",
     "eslint-plugin-import": "^2.2.0",
-    "execa": "^0.6.3",
     "jest": "^19.0.2",
-    "read-pkg": "^2.0.0"
+    "write-changelog": "^1.1.0"
   },
   "peerDependencies": {
     "eslint": "^3.0.0"
