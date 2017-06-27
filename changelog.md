@@ -1,5 +1,11 @@
 ## Change Log
 
+### [v3.3.1](https://github.com/wyze/eslint-plugin-wyze/releases/tag/v3.3.1) (2017-06-27)
+
+* [[`9f0504d104`](https://github.com/wyze/eslint-plugin-wyze/commit/9f0504d104)] - Upgrade dependencies (Neil Kistner)
+* [[`22bea1f744`](https://github.com/wyze/eslint-plugin-wyze/commit/22bea1f744)] - Ensure rest property is last in `sort-destructuring-keys` rule (Neil Kistner)
+* [[`3f04cd2c66`](https://github.com/wyze/eslint-plugin-wyze/commit/3f04cd2c66)] - Fix bug in `sort-destructuring-keys` when 10+ keys are used (Neil Kistner)
+
 ### [v3.3.0](https://github.com/wyze/eslint-plugin-wyze/releases/tag/v3.3.0) (2017-06-12)
 
 * [[`354de2e304`](https://github.com/wyze/eslint-plugin-wyze/commit/354de2e304)] - Update `eslint` peer dependency (Neil Kistner)
