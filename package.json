@@ -28,7 +28,7 @@
     "eslint-plugin"
   ],
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
