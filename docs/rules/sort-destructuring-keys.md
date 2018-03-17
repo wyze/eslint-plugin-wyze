@@ -26,6 +26,9 @@ const { B, a } = props
 
 /* eslint wyze/sort-destructuring-keys: ['error', 'asc', { ignoreComputed: true }] */
 const { a, b, ['b'.toUpperCase()]: c } = props
+
+/* eslint wyze/sort-destructuring-keys: ['error', 'asc', { ignoreDefaults: false }] */
+const { b, a = b } = props
 ```
 
 The following patterns are considered problems:
@@ -58,6 +61,10 @@ Specify which way you would like the keys to be sorted.
 ### `{}.caseSensitive`: boolean (default: true)
 
 Turn off case sensitivity sorting.
+
+### `{}.ignoreDefaults`: boolean (default: true)
+
+Include default values so some property may be placed before other properties.
 
 ### `{}.ignoreComputed`: boolean (default: false)
 
