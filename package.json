@@ -41,6 +41,8 @@
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-wyze": "file:./",
     "jest": "^22.4.2",
+    "typescript": "^2.9.2",
+    "typescript-eslint-parser": "^16.0.1",
     "write-changelog": "^1.1.0"
   },
   "peerDependencies": {
