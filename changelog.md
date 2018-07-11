@@ -1,5 +1,13 @@
 ## Change Log
 
+### [v3.4.0](https://github.com/wyze/eslint-plugin-wyze/releases/tag/v3.4.0) (2018-07-11)
+
+* [[`409135348d`](https://github.com/wyze/eslint-plugin-wyze/commit/409135348d)] - Fix `sort-imports` auto-fix with TypeScript parser (#24) (Justin Anastos)
+* [[`ef1fb7b259`](https://github.com/wyze/eslint-plugin-wyze/commit/ef1fb7b259)] - Add support for default values (#21) (Jakub Rożek)
+* [[`aea583cbd3`](https://github.com/wyze/eslint-plugin-wyze/commit/aea583cbd3)] - Update code to reflect new lint rules (Neil Kistner)
+* [[`8281a343f7`](https://github.com/wyze/eslint-plugin-wyze/commit/8281a343f7)] - Upgrade dependencies and remove prelint command (Neil Kistner)
+* [[`18ec073bf2`](https://github.com/wyze/eslint-plugin-wyze/commit/18ec073bf2)] - Drop support for Node 4 (Neil Kistner)
+
 ### [v3.3.1](https://github.com/wyze/eslint-plugin-wyze/releases/tag/v3.3.1) (2017-06-27)
 
 * [[`9f0504d104`](https://github.com/wyze/eslint-plugin-wyze/commit/9f0504d104)] - Upgrade dependencies (Neil Kistner)
